@@ -10,8 +10,8 @@ import SwiftUI
 @main
 struct todoApp: App {
     var body: some Scene {
-        DocumentGroup(newDocument: todoDocument()) { file in
-            ContentView(document: file.$document)
+        WindowGroup {
+            ContentView()
         }
     }
 }
